@@ -146,35 +146,104 @@ const Main = () => {
 				</Center>
 				<Contact
 					target="_blank"
-					to={{ pathname: 'mailto:mokaddis.alif@gmail.com' }}
+					to={{
+						pathname:
+							'https://drive.google.com/file/d/1Rxht9_wna--iXTxfi0kCAxzSMtetPIB4/view?usp=sharing',
+					}}
 				>
-					<motion.h3 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-						Email me...
+					<motion.h3
+						initial={{
+							y: -200,
+							transition: { type: 'spring', duration: 1.5, delay: 1 },
+						}}
+						animate={{
+							y: 0,
+							transition: { type: 'spring', duration: 1.5, delay: 1 },
+						}}
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
+					>
+						My Resume...
 					</motion.h3>
 				</Contact>
 				<BLOG to="/blog">
-					<motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+					<motion.h2
+						initial={{
+							y: -200,
+							transition: { type: 'spring', duration: 1.5, delay: 1 },
+						}}
+						animate={{
+							y: 0,
+							transition: { type: 'spring', duration: 1.5, delay: 1 },
+						}}
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
+					>
 						Blog
 					</motion.h2>
 				</BLOG>
 				<Work click={click} to="/work">
-					<motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+					<motion.h2
+						initial={{
+							y: -200,
+							transition: { type: 'spring', duration: 1.5, delay: 1 },
+						}}
+						animate={{
+							y: 0,
+							transition: { type: 'spring', duration: 1.5, delay: 1 },
+						}}
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
+					>
 						Work
 					</motion.h2>
 				</Work>
 				<BottomBar>
 					<About click={click} to="/about">
-						<motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+						<motion.h2
+							initial={{
+								y: 200,
+								transition: { type: 'spring', duration: 1.5, delay: 1 },
+							}}
+							animate={{
+								y: 0,
+								transition: { type: 'spring', duration: 1.5, delay: 1 },
+							}}
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 0.9 }}
+						>
 							About
 						</motion.h2>
 					</About>
 					<Skills click={click} to="/skills">
-						<motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+						<motion.h2
+							initial={{
+								y: 200,
+								transition: { type: 'spring', duration: 1.5, delay: 1 },
+							}}
+							animate={{
+								y: 0,
+								transition: { type: 'spring', duration: 1.5, delay: 1 },
+							}}
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 0.9 }}
+						>
 							My Skills
 						</motion.h2>
 					</Skills>
-					<Connect to="/">
-						<motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+					<Connect to="/connect">
+						<motion.h2
+							initial={{
+								y: 200,
+								transition: { type: 'spring', duration: 1.5, delay: 1 },
+							}}
+							animate={{
+								y: 0,
+								transition: { type: 'spring', duration: 1.5, delay: 1 },
+							}}
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 0.9 }}
+						>
 							Connect
 						</motion.h2>
 					</Connect>

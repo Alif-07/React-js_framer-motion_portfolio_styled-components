@@ -7,6 +7,8 @@ import BlogPage from './Components/BlogPage';
 import WorkPage from './Components/WorkPage';
 import Globalstyle from './globalStyles';
 import MySkillPage from './Components/MySkillPage';
+import Connect from './Components/Connect';
+import CardDetails from './subComponent/CardDetails';
 
 function App() {
 	return (
@@ -18,7 +20,9 @@ function App() {
 					<Route exact path="/about" component={AboutPage} />
 					<Route exact path="/blog" component={BlogPage} />
 					<Route exact path="/work" component={WorkPage} />
+					<Route exact path="/work/:id" component={CardDetails} />
 					<Route exact path="/skills" component={MySkillPage} />
+					<Route exact path="/connect" component={Connect} />
 				</Switch>
 			</ThemeProvider>
 		</>
