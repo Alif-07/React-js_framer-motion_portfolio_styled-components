@@ -36,3 +36,32 @@ textarea {
 	font-weight: 500;
 	cursor: pointer;
 } */
+@media screen and (max-width: 480px) {
+	.c-wrapper {
+		flex-direction: column;
+		padding: 0px 50px;
+	}
+
+	.c-desc {
+		display: none;
+	}
+
+	form {
+		margin-top: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	input {
+		width: 50%;
+		height: 40px;
+		margin: 10px;
+		margin-left: 0;
+	}
+
+	button {
+		margin-top: 10px;
+	}
+}

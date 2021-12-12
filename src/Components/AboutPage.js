@@ -56,6 +56,7 @@ const Description = styled.div`
 	color: ${(props) => props.theme.text};
 	font-size: calc(0.6em + 1vw);
 	padding: 0.5rem 0;
+
 	${Main}:hover & {
 		color: ${(props) => props.theme.body};
 	}
@@ -76,6 +77,7 @@ const Description2 = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 	${Main}:hover & {
 		color: ${(props) => props.theme.body};
 	}
@@ -101,7 +103,7 @@ const AboutPage = () => {
 					<Title>
 						<Develope width={40} height={40} /> Frontend Developer
 					</Title>
-					<Description>
+					<Description style={{ overflowY: 'hidden' }}>
 						I'm a front-end developer located in Bangladesh. I love to create
 						simple yet beautiful websites with great user experience. I'm
 						interested in the whole frontend stack Like trying new things and
